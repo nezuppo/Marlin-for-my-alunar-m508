@@ -814,7 +814,7 @@
 #define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
 #define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
-//#define Z_AFTER_PROBING           5 // Z position after probing is done
+#define Z_AFTER_PROBING            10 // Z position after probing is done
 
 #define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
 
@@ -990,7 +990,7 @@
  * Turn on with the command 'M111 S32'.
  * NOTE: Requires a lot of PROGMEM!
  */
-#define DEBUG_LEVELING_FEATURE
+//#define DEBUG_LEVELING_FEATURE
 
 #if ENABLED(MESH_BED_LEVELING) || ENABLED(AUTO_BED_LEVELING_BILINEAR) || ENABLED(AUTO_BED_LEVELING_UBL)
   // Gradually reduce leveling correction until a set height is reached,
