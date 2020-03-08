@@ -4382,7 +4382,9 @@ inline void gcode_G28(const bool always_home_all) {
           homeaxis(Z_AXIS);
         #endif
 
-        move_z_after_probing();
+        #if defined(Z_AFTER_PROBING)
+          move_z_after_probing();
+        #endif
 
       } // home_all || homeZ
     #endif // Z_HOME_DIR < 0
